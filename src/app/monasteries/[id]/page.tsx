@@ -5,6 +5,24 @@ import { placeholderImages } from '@/lib/placeholder-images.json';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Clock, Ticket, Route, GalleryHorizontal, Landmark, BookOpen, Calendar, Camera } from 'lucide-react';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: { id: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const monastery = monasteries.find(m => m.id === params.id);
+  if (!monastery) {
+    return {
+      title: 'Monastery Not Found',
+    };
+  }
+  return {
+    title: `${monastery.name} | Sikkim Monasteries Guide`,
+    description: monastery.description,
+  };
+}
 
 export async function generateStaticParams() {
   return monasteries.map(monastery => ({
