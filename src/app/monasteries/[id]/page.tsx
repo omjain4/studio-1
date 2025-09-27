@@ -4,7 +4,7 @@ import { monasteries } from '@/lib/data';
 import { placeholderImages } from '@/lib/placeholder-images.json';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Clock, Ticket, Route, GalleryHorizontal, Landmark, BookOpen, Calendar } from 'lucide-react';
+import { Clock, Ticket, Route, GalleryHorizontal, Landmark, BookOpen, Calendar, Camera } from 'lucide-react';
 
 export async function generateStaticParams() {
   return monasteries.map(monastery => ({
