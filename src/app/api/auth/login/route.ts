@@ -36,7 +36,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET!, {
+    const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET!, {
       expiresIn: '1d',
     });
 
@@ -49,7 +49,15 @@ export async function POST(req: Request) {
 
 
     return NextResponse.json(
-      { message: 'Logged in successfully!' },
+      { 
+        message: 'Logged in successfully!',
+        user: {
+          id: user._id,
+          fullName: user.fullName,
+          email: user.email,
+          role: user.role,
+        },
+      },
       { status: 200 }
     );
   } catch (error) {

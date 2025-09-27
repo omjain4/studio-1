@@ -21,6 +21,11 @@ const UserSchema = new mongoose.Schema({
     minlength: 6,
     select: false, // Do not return password by default
   },
+  role: {
+    type: String,
+    enum: ['user', 'admin'],
+    default: 'user',
+  },
   createdAt: {
     type: Date,
     default: Date.now,

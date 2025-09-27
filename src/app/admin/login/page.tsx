@@ -32,7 +32,7 @@ const formSchema = z.object({
 });
 
 
-export default function LoginPage() {
+export default function AdminLoginPage() {
   const router = useRouter();
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
@@ -51,16 +51,16 @@ export default function LoginPage() {
     try {
       const user = await login(values.email, values.password);
 
+      if (user.role !== 'admin') {
+        throw new Error('You do not have administrative privileges.');
+      }
+      
       toast({
-        title: "Login Successful",
+        title: "Admin Login Successful",
         description: "Welcome back!",
       });
 
-      if (user.role === 'admin') {
-        router.push('/admin');
-      } else {
-        router.push('/');
-      }
+      router.push('/admin');
       router.refresh();
 
     } catch (error) {
@@ -79,9 +79,9 @@ export default function LoginPage() {
     <div className="flex items-center justify-center min-h-[calc(100vh-13rem)] py-12 px-4">
       <Card className="mx-auto max-w-sm w-full border-border/60 shadow-lg">
         <CardHeader>
-          <CardTitle className="text-3xl font-headline text-center">Login</CardTitle>
+          <CardTitle className="text-3xl font-headline text-center">Admin Login</CardTitle>
           <CardDescription className="text-center">
-            Enter your email below to login to your account
+            Enter your credentials to access the admin dashboard
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -96,7 +96,7 @@ export default function LoginPage() {
                     <FormControl>
                       <Input
                         type="email"
-                        placeholder="m@example.com"
+                        placeholder="admin@example.com"
                         {...field}
                         className="text-base"
                       />
@@ -120,20 +120,14 @@ export default function LoginPage() {
               />
               <Button type="submit" className="w-full h-11 text-base bg-primary hover:bg-primary/90 text-primary-foreground" disabled={isLoading}>
                 {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                Login
+                Login as Admin
               </Button>
             </form>
           </Form>
-          <div className="mt-4 text-center text-sm">
-            Don&apos;t have an account?{" "}
-            <Link href="/register" className="underline text-primary hover:text-accent">
-              Sign up
-            </Link>
-          </div>
-           <div className="mt-2 text-center text-sm">
-            Are you an administrator?{" "}
-            <Link href="/admin/login" className="underline text-primary hover:text-accent">
-              Sign in as Admin
+           <div className="mt-4 text-center text-sm">
+            Are you a regular user?{" "}
+            <Link href="/login" className="underline text-primary hover:text-accent">
+              Login here
             </Link>
           </div>
         </CardContent>

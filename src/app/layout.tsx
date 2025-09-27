@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster"
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Chatbot from '@/components/chatbot';
+import { AuthProvider } from '@/hooks/use-auth';
 
 export const metadata: Metadata = {
   title: 'Sikkim Monasteries Guide',
@@ -24,13 +25,15 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("min-h-screen bg-background font-body antialiased", "font-body")}>
-        <div className="relative flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        <Chatbot />
-        <Toaster />
+        <AuthProvider>
+          <div className="relative flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <Chatbot />
+          <Toaster />
+        </AuthProvider>
       </body>
     </html>
   );
