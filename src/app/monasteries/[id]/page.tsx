@@ -70,12 +70,10 @@ export default function MonasteryDetailPage({ params }: { params: { id: string }
               </CardHeader>
               <CardContent>
                 {monastery.streetViewLink ? (
-                  <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border-2 border-border/60">
+                  <div className="relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
                     <iframe
                       src={monastery.streetViewLink}
-                      width="100%"
-                      height="450"
-                      style={{ border: 0 }}
+                      className="absolute top-0 left-0 w-full h-full border-0 rounded-lg"
                       allowFullScreen={true}
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
