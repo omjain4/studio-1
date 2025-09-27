@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -26,27 +27,29 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center justify-between">
-        <Link href="/" className="flex items-center gap-2" onClick={closeSheet}>
-          <Logo className="h-8 w-8 text-primary" />
-          <span className="font-headline font-bold text-xl hidden sm:inline-block">
-            Sikkim Monasteries
-          </span>
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link href="/" className="flex items-center gap-2" onClick={closeSheet}>
+            <Logo className="h-8 w-8 text-primary" />
+            <span className="font-headline font-bold text-xl hidden sm:inline-block">
+              Sikkim Monasteries
+            </span>
+          </Link>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className={cn(
-                'transition-colors hover:text-primary',
-                pathname === href ? 'text-primary font-bold' : 'text-muted-foreground'
-              )}
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={cn(
+                  'transition-colors hover:text-primary',
+                  pathname === href ? 'text-primary font-bold' : 'text-muted-foreground'
+                )}
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         <div className="flex items-center gap-2">
           <Button asChild variant="ghost" className="hidden md:flex">
