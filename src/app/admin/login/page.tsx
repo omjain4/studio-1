@@ -57,10 +57,10 @@ export default function AdminLoginPage() {
       
       toast({
         title: "Admin Login Successful",
-        description: "Welcome back!",
+        description: "Welcome back, Admin!",
       });
 
-      router.push('/admin');
+      router.push('/');
       router.refresh();
 
     } catch (error) {
