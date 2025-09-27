@@ -85,12 +85,13 @@ export default function MonasteryDetailPage({ params }: { params: { id: string }
           <TabsContent value="tour">
              <Card className="border-border/60">
               <CardHeader>
-                <CardTitle className="font-headline text-2xl">360° Virtual Tour</CardTitle>
+                <CardTitle className="font-headline text-2xl">360° View & Gallery</CardTitle>
               </CardHeader>
               <CardContent>
                 <VirtualTour
                   streetViewLink={monastery.streetViewLink}
                   monasteryName={monastery.name}
+                  imageIds={monastery.images}
                 />
               </CardContent>
             </Card>
