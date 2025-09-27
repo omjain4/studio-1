@@ -8,11 +8,7 @@ const MapView = dynamic(() => import('@/components/map-view'), {
   loading: () => <Skeleton className="h-full w-full" />,
 });
 
-type MapProps = {
-  apiKey: string;
-  monasteries: typeof monasteries;
-};
-
-export default function Map({ apiKey, monasteries }: MapProps) {
+export default function Map() {
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
   return <MapView apiKey={apiKey} monasteries={monasteries} />;
 }

@@ -1,9 +1,6 @@
-import { monasteries } from '@/lib/data';
 import Map from '@/components/map';
 
 export default function MapPage() {
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
-
   return (
     <div className="flex flex-col h-[calc(100vh-4rem)]">
       <div className="container mx-auto py-8 px-4 text-center">
@@ -16,7 +13,7 @@ export default function MapPage() {
       </div>
       <div className="flex-grow p-4">
         <div className="relative w-full h-full rounded-lg overflow-hidden border-2 border-border/60 shadow-lg">
-          <Map apiKey={apiKey} monasteries={monasteries} />
+          <Map />
         </div>
       </div>
     </div>
