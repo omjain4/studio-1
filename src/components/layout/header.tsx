@@ -70,7 +70,7 @@ export default function Header() {
                   className="relative h-10 w-10 rounded-full"
                 >
                   <Avatar className="h-10 w-10">
-                    <AvatarFallback>{user.fullName.charAt(0).toUpperCase()}</AvatarFallback>
+                    <AvatarFallback>{user.fullName ? user.fullName.charAt(0).toUpperCase() : 'U'}</AvatarFallback>
                   </Avatar>
                 </Button>
               </DropdownMenuTrigger>
