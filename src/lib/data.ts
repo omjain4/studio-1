@@ -8,7 +8,7 @@ export const monasteries: Monastery[] = [
     history: 'Originally built in the mid-18th century, Rumtek Monastery was rebuilt in the 1960s by the 16th Karmapa. It serves as the main seat of the Karma Kagyu lineage outside of Tibet. The monastery is a vibrant center for Buddhist study and meditation, featuring a golden stupa containing the relics of the 16th Karmapa.',
     coordinates: { lat: 27.2913, lng: 88.5665 },
     images: ['monastery-1', 'monastery-2', 'monastery-3'],
-    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1716901768417!6m8!1m7!1sCAoSLEFGMVFpcE9ON2hfLVFTSkIyX0VwS29tX2p5RldxZlVwR0lYQ0lMS3lxbGtv!2e0!3e11!4b1!8m2!3d27.2912637!4d88.5665448',
+    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1718892589531!6m8!1m7!1sCAoSLEFGMVFpcE9ON2hfLVFTSkIyX0VwS29tX2p5RldxZlVwR0lYQ0lMS3lxbGtv!2e0!3e11!4b1!8m2!3d27.2912637!4d88.5665448',
     visitingInfo: {
       timings: '10:00 AM - 5:00 PM',
       entryFee: '₹10 per person',
