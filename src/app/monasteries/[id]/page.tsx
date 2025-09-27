@@ -74,6 +74,7 @@ export default function MonasteryDetailPage({ params }: { params: { id: string }
                     <iframe
                       src={monastery.streetViewLink}
                       className="absolute top-0 left-0 w-full h-full border-0 rounded-lg"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen={true}
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
@@ -81,7 +82,7 @@ export default function MonasteryDetailPage({ params }: { params: { id: string }
                     ></iframe>
                   </div>
                 ) : (
-                  <p className="text-muted-foreground">A 360° virtual tour for this monastery is not yet available.</p>
+                  <p className="text-muted-foreground">Google Street View for this monastery is not yet available.</p>
                 )}
               </CardContent>
             </Card>
