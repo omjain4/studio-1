@@ -9,7 +9,7 @@
     {
       "id": "monastery-1",
       "description": "Exterior view of Rumtek Monastery.",
-      "imageUrl": "https://picsum.photos/seed/rumtek/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1744799732996-6abd9b544bef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxidWRkaGlzdCUyMG1vbmFzdGVyeXxlbnwwfHx8fDE3NTg5ODY5NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "buddhist monastery"
     },
     {
@@ -29,6 +29,18 @@
       "description": "Enchey Monastery surrounded by trees.",
       "imageUrl": "https://images.unsplash.com/photo-1682170607705-687f038ab2d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb25hc3RlcnklMjBmb3Jlc3R8ZW58MHx8fHwxNzU4OTg2OTU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "monastery forest"
+    },
+    {
+      "id": "monastery-5",
+      "description": "Ralang Monastery with its intricate paintings.",
+      "imageUrl": "https://images.unsplash.com/photo-1736506684764-f5f94c36e40f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidWRkaGlzdCUyMHBhaW50aW5nc3xlbnwwfHx8fDE3NTg5OTAwMjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "buddhist paintings"
+    },
+    {
+      "id": "monastery-6",
+      "description": "The secluded Dubdi Monastery.",
+      "imageUrl": "https://images.unsplash.com/photo-1652515989415-f1674330ed51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvbGQlMjBtb25hc3Rlcnl8ZW58MHx8fHwxNzU4OTkwMDI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old monastery"
     },
     {
       "id": "event-1",

@@ -60,6 +60,51 @@ export const monasteries: Monastery[] = [
       routes: 'Located on a ridge above Gangtok, easily accessible from the city center.'
     },
     imagePlaceholderId: 'monastery-4',
+  },
+  {
+    id: 'ralang-monastery',
+    name: 'Ralang Monastery',
+    description: 'A major monastery of the Kagyu sect, known for its impressive collection of paintings.',
+    history: 'Built in the early 18th century, Ralang Monastery was established following the pilgrimage of the fourth Chogyal to Tibet. It is one of the most important monasteries of the Kagyu sect in Sikkim, famed for its annual Pang Lhabsol festival and the Mahakala dance.',
+    coordinates: { lat: 27.3075, lng: 88.3892 },
+    images: ['monastery-5', 'monastery-1'],
+    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1718903331644!6m8!1m7!1sCAoSLEFGMVFpcE5qV0x4N2hfYmFfTGNwVWpCbkx6TDhfR3J1bWlZWFpSWHpXNlI0!2e0!3e11!4b1!8m2!3d27.3075!4d88.3892',
+    visitingInfo: {
+      timings: '8:00 AM - 5:00 PM',
+      entryFee: 'Free entry',
+      routes: 'Located near Ravangla, about 13 km from the town.'
+    },
+    imagePlaceholderId: 'monastery-5',
+  },
+  {
+    id: 'dubdi-monastery',
+    name: 'Dubdi Monastery',
+    description: 'Known as the oldest monastery in Sikkim, established in 1701.',
+    history: 'Also known as the "Hermit\'s Cell", Dubdi Monastery was founded by Lhatsun Namkha Jigme. It is central to the history of Sikkim, being the first monastery established after the consecration of the first Chogyal. It\'s a bit of a hike to reach, adding to its serene and secluded charm.',
+    coordinates: { lat: 27.3621, lng: 88.2198 },
+    images: ['monastery-6', 'monastery-2'],
+    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1718903422619!6m8!1m7!1sCAoSLEFGMVFpcE5vRDRkMUx2NnFmOEp2Y18xNl9IUUFMNnB4dF9vTDBsUXBfU1VE!2e0!3e11!4b1!8m2!3d27.3620973!4d88.2197821',
+    visitingInfo: {
+      timings: '8:00 AM - 4:00 PM',
+      entryFee: '₹20 per person',
+      routes: 'Located near Yuksom, requires a 3 km uphill walk.'
+    },
+    imagePlaceholderId: 'monastery-6',
+  },
+  {
+    id: 'phodong-monastery',
+    name: 'Phodong Monastery',
+    description: 'One of the six most important monasteries of Sikkim, housing rare murals.',
+    history: 'Founded in the early 18th century by the Chogyal Gyurmed Namgyal, Phodong Monastery belongs to the Kagyupa Sect. It was rebuilt in the 20th century but preserves its original style. The monastery is known for its beautiful murals and religious paintings.',
+    coordinates: { lat: 27.4646, lng: 88.6015 },
+    images: ['monastery-1', 'monastery-3'],
+    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1718903517172!6m8!1m7!1sCAoSLEFGMVFpcE16aVZyNnJvNFljOHd2c3NlSDZJcUJhOXhyY2xLc3V3Z0lWVGhP!2e0!3e11!4b1!8m2!3d27.4645719!4d88.601525',
+    visitingInfo: {
+      timings: '8:00 AM - 5:00 PM',
+      entryFee: 'Free entry',
+      routes: 'About 38 km from Gangtok in North Sikkim.'
+    },
+    imagePlaceholderId: 'monastery-2',
   }
 ];
 
