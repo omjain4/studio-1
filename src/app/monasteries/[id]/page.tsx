@@ -12,7 +12,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function MonasteryDetailPage({ params }: { params: { id: string } }) {
+export default async function MonasteryDetailPage({ params }: { params: { id: string } }) {
   const monastery = monasteries.find(m => m.id === params.id);
 
   if (!monastery) {
