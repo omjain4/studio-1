@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-monastery",
+      "description": "A stunning view of a Sikkim monastery nestled in the mountains.",
+      "imageUrl": "https://images.unsplash.com/photo-1601800783567-e765c8d37332?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb25hc3RlcnklMjBtb3VudGFpbnN8ZW58MHx8fHwxNzU4OTg2OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "monastery mountains"
+    },
+    {
+      "id": "monastery-1",
+      "description": "Exterior view of Rumtek Monastery.",
+      "imageUrl": "https://picsum.photos/seed/rumtek/600/400",
+      "imageHint": "buddhist monastery"
+    },
+    {
+      "id": "monastery-2",
+      "description": "Courtyard of Pemayangtse Monastery.",
+      "imageUrl": "https://images.unsplash.com/photo-1755591867067-e9fb30c80cf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb25hc3RlcnklMjBjb3VydHlhcmR8ZW58MHx8fHwxNzU4OTg2OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "monastery courtyard"
+    },
+    {
+      "id": "monastery-3",
+      "description": "Tashiding Monastery on a hilltop.",
+      "imageUrl": "https://images.unsplash.com/photo-1607024879597-ccfcbc5da85b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb25hc3RlcnklMjBoaWxsdG9wfGVufDB8fHx8MTc1ODk4Njk1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "monastery hilltop"
+    },
+    {
+      "id": "monastery-4",
+      "description": "Enchey Monastery surrounded by trees.",
+      "imageUrl": "https://images.unsplash.com/photo-1682170607705-687f038ab2d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb25hc3RlcnklMjBmb3Jlc3R8ZW58MHx8fHwxNzU4OTg2OTU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "monastery forest"
+    },
+    {
+      "id": "event-1",
+      "description": "Saga Dawa festival celebration.",
+      "imageUrl": "https://images.unsplash.com/photo-1571038363812-7aeb593e258f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0aWJldGFuJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzU4OTg2OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tibetan festival"
+    },
+    {
+      "id": "event-2",
+      "description": "Losar festival masks.",
+      "imageUrl": "https://images.unsplash.com/photo-1707922340770-944aa61172cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmZXN0aXZhbCUyMG1hc2t8ZW58MHx8fHwxNzU4OTg2OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "festival mask"
+    },
+    {
+      "id": "about-us",
+      "description": "A winding road in the mountains of Sikkim.",
+      "imageUrl": "https://images.unsplash.com/photo-1520962922320-2038eebab146?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb3VudGFpbiUyMHJvYWR8ZW58MHx8fHwxNzU4OTQzNTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain road"
+    }
+  ]
 }
