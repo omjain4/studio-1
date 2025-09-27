@@ -23,6 +23,7 @@ export const monasteries: Monastery[] = [
     history: 'Founded in 1705 by Lama Lhatsun Chempo, Pemayangtse Monastery is part of the Nyingma order of Tibetan Buddhism. Its name means "Perfect Sublime Lotus".',
     coordinates: { lat: 27.3005, lng: 88.2536 },
     images: ['monastery-2', 'monastery-4'],
+    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1716901831885!6m8!1m7!1sCAoSLEFGMVFpcE9sLUlQVU9sXzZlX09iV2hfNlZ0ZklWN29wZDR5VnFLSnRObVNL!2e0!3e11!4b1!8m2!3d27.3004523!4d88.2536292',
     visitingInfo: {
       timings: '9:00 AM - 6:00 PM',
       entryFee: '₹20 per person',
@@ -37,6 +38,7 @@ export const monasteries: Monastery[] = [
     history: 'Founded in 1641 by Ngadak Sempa Chempo Phunshok Rigzing, it belongs to the Nyingma sect. It is believed that just seeing the monastery cleanses all sins.',
     coordinates: { lat: 27.2345, lng: 88.2861 },
     images: ['monastery-3', 'monastery-1'],
+    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1716901886880!6m8!1m7!1sCAoSLEFGMVFpcE1YSVlXb3hUYjhZdHpfalN3X1VIbzRtbE5tX1ZKaG5xUjR3QkZJ!2e0!3e11!4b1!8m2!3d27.2345!4d88.2861',
     visitingInfo: {
       timings: '7:00 AM - 7:00 PM',
       entryFee: 'Free entry',
@@ -51,6 +53,7 @@ export const monasteries: Monastery[] = [
     history: 'The monastery was established in 1909 on a site blessed by the tantric master Lama Druptob Karpo. "Enchey" means "the solitary temple".',
     coordinates: { lat: 27.3425, lng: 88.6212 },
     images: ['monastery-4', 'monastery-2'],
+    streetViewLink: 'https://www.google.com/maps/embed?pb=!4v1716901930776!6m8!1m7!1sCAoSLEFGMVFpcE5UclZzZ0VqT3B0eDRpdm5RNlJ0bERrU055aU9zZ1JtV1hYVFRD!2e0!3e11!4b1!8m2!3d27.3425!4d88.6212',
     visitingInfo: {
       timings: '6:00 AM - 4:00 PM',
       entryFee: 'Free entry',
