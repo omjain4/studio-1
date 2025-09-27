@@ -3,15 +3,15 @@
 import { APIProvider, Map, AdvancedMarker, Pin, InfoWindow } from '@vis.gl/react-google-maps';
 import { useState } from 'react';
 import type { Monastery } from '@/lib/types';
+import { monasteries } from '@/lib/data';
 import { Button } from './ui/button';
 import Link from 'next/link';
 
 type MapViewProps = {
   apiKey: string;
-  monasteries: Monastery[];
 };
 
-export default function MapView({ apiKey, monasteries }: MapViewProps) {
+export default function MapView({ apiKey }: MapViewProps) {
   const [selectedMonastery, setSelectedMonastery] = useState<Monastery | null>(null);
 
   if (!apiKey) {
