@@ -27,10 +27,14 @@ export async function POST(req: Request) {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
+    // If the user registers with admin@example.com, assign them the admin role
+    const role = email === 'admin@example.com' ? 'admin' : 'user';
+
     const newUser = new User({
       fullName,
       email,
       password: hashedPassword,
+      role,
     });
 
     await newUser.save();

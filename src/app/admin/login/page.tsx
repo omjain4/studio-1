@@ -41,7 +41,7 @@ export default function AdminLoginPage() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: "admin@example.com",
       password: "",
     },
   });
@@ -125,7 +125,7 @@ export default function AdminLoginPage() {
             </form>
           </Form>
            <div className="mt-4 text-center text-sm">
-            Are you a regular user?{" "}
+            Not an admin?{" "}
             <Link href="/login" className="underline text-primary hover:text-accent">
               Login here
             </Link>
